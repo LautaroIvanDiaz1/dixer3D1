@@ -1,0 +1,397 @@
+
+html{
+    font-size: 62,5%;
+}
+
+*{    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    padding: 0;
+}
+
+#fondoImagen{
+    background-color: rgb(120, 110, 211);
+    
+}
+
+.confDixer img{
+    margin: 0 0 0 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.principal img {
+    width: 1349px;
+    height: 450px;
+    margin: 0px 0px 75px 0px;
+
+}
+
+header{
+    position: sticky;
+    top: 0%;
+}
+
+.listaMenu ul{
+    background-color: rgb(181, 167, 224);
+    
+  
+}
+
+.listaMenu ul li{
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.colorTitulo{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color:rgb(94, 168, 168);
+}
+
+.estiloFormulario{
+    margin: 20px 40px;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.estiloH1{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 40px;
+    margin: 5% 40%;
+}
+
+
+.estiloTabla{
+    color: antiquewhite;
+    margin: 100px 10px 0px 30px;
+    text-align: center;
+    
+    
+}
+ table{
+    height: 500px;
+    width: 70%;
+}
+
+.estiloH2{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 50px;
+    margin: 5% 46%;
+}
+
+
+.h2{
+   font-size: 50px;
+   color:rgb(120, 110, 211) ; 
+   margin: 5px;
+}
+
+.h3{
+    color:rgb(120, 110, 211) ;
+    text-align: justify;
+    margin: 15px;
+    
+}
+
+
+.estiloP{
+    text-align: justify;
+    color: antiquewhite;
+    margin: 10px 30px 20px 20px;
+    font-size: 25px;
+}
+
+.fotoCelular{
+    background-size: cover;
+    margin: 30px;
+    padding: 30px;
+    
+    display: inline-block;
+
+}
+
+.fotoNotebook{
+    background-size: cover;
+    margin: 30px;
+    padding: 30px;
+   
+   display: inline-block;
+
+}
+
+.fotoAuriculares{
+    background-size: cover;
+    margin: 30px;
+    padding: 30px;
+    
+    display: inline-block;
+}
+
+
+
+.estiloServicios{
+    background-size: cover; 
+    margin:20px;
+    padding: 20px;
+   display: inline-block;
+}
+
+.fotoMagna{
+    background-size: cover; 
+    margin: 20px;
+    padding: 20px;
+     display:inline-block;
+}
+
+.fotoHydra{
+    background-size: cover; 
+    margin: 20px;
+    padding: 20px;
+     display:inline-block;
+}
+
+.estiloServicios{
+    color: antiquewhite;
+    margin: 5% 0 5% 43%;
+
+}
+
+.foto1{
+    background-size: cover;
+   width: 200px;
+   height: 200px;
+   display: block;
+}
+
+.foto2{
+    background-size: cover; 
+    display: block;
+    width: 200px;
+    height: 200px;
+    
+    
+   
+}
+
+.foto3{
+    background-size: cover;
+    display: block;
+     width: 200px;
+     height: 200px;
+}
+
+
+.estiloFooter{
+    background-color:rgb(181, 167, 224);
+    padding: 10px;
+}
+
+.redesFlotantes img{
+    width: 25px;
+    display:inline;
+}
+
+.whatsapp img{
+    width: 30px;
+}
+
+
+.whatsapp{
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+}
+
+body {
+    background-color:  rgb(34, 34, 34);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+                    /*GRIDS*/
+
+.contenedor{
+    display: grid;
+    width: 1350px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 0.2fr 0.3fr 1fr 1fr 0.2fr;
+    grid-template-areas: 
+    "confDixer confDixer"
+    "listaMenu listaMenu"
+    "nosotros nosotros"
+    "texto texto"
+    "foto foto"
+    "footer footer"
+    ;
+justify-items: stretch;/* mueve el elemento*/
+justify-content: center;/*mueve el contenido*/
+
+
+}
+
+.confDixer{
+    display: flex;
+    justify-items: center;
+    grid-area: confDixer;
+    justify-self: stretch;
+}
+.listaMenu{
+    grid-area: listaMenu;
+    justify-self: stretch;
+}
+
+.estiloH1{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    grid-area: nosotros;
+    
+}
+
+.estiloP{
+    grid-area: texto;
+    justify-self: start;
+}
+
+
+.fotoEnder{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    grid-area: foto;
+   
+}
+
+.estiloFooter{
+    display: flex;
+    justify-content: stretch;
+    justify-content: start;
+    align-items: center;
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+/*responsive*/
+
+@media screen and (max-width:768px) {
+
+.contenedor{
+    grid-template-columns: 0.2fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
+    grid-template-areas: 
+    "listaMenu confDixer confDixer"
+    "listaMenu nosotros nosotros"
+    "listaMenu texto texto"
+    "listaMenu foto ."
+    "footer footer footer "
+}
+}
+
+
+/*mobil*/
+
+@media (max-width:500px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr  1fr 1fr 1fr 0.5fr;
+        grid-template-areas: 
+        "confDixer"
+        "listaMenu"
+        "nosotros"
+        "texto"
+        "foto"
+        "footer"
+        ;
+    }
+}
+
+
+
+.contenedorIndex{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.2fr 0.2fr 3fr 1fr 3fr 0.2fr ;
+    grid-template-areas: 
+    "confDixer confDixer confDixer"
+    "listaMenu listaMenu listaMenu"
+    "principal principal principal"
+    "estiloH2 estiloH2 ."
+    ". estiloServicios . "
+    "estiloFooter estiloFooter estiloFooter";
+}
+
+.confDixer{
+    display: flex;
+    justify-items: center;
+    grid-area: confDixer;
+    justify-self: stretch;
+}
+.listaMenu{
+    grid-area: listaMenu;
+    justify-self: stretch;
+}
+.principal{
+    display: flex;
+    justify-content: stretch;
+    grid-area: principal;
+}
+.estiloH2{
+    display: flex;
+    justify-items: center;
+    grid-area: confDixer;
+    justify-self: stretch;
+}
+.estiloServicios{
+    grid-area: estiloServicios;
+    align-items: center;
+}
+.estiloFooter{
+    display: flex;
+    justify-content: stretch;
+    justify-content: start;
+    align-items: center;
+    grid-area: footer;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width:768px) {
+    .contenedorIndex{
+        grid-template-columns: 0.2fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 3fr  0.2fr;
+        grid-template-areas: 
+        "listaMenu confDixer confDixer"
+        "listaMenu estiloH2 estiloH2"
+        "listaMenu estiloServicios ."
+        "estiloFooter estiloFooter estiloFooter";
+    }
+        
+    }
+    /*MOBIL*/
+
+    @media (max-width:500px) {
+        .contenedor{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.2fr 0.2fr  1fr 1fr 0.5fr;
+            grid-template-areas: 
+            "confDixer"
+            "listaMenu"
+            "estiloH2"
+            "estiloServicios"
+            "estiloFooter"
+            ;
+        }
+    }
+
