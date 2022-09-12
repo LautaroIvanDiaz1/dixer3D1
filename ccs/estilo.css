@@ -22,6 +22,7 @@ html{
     height: 50px;
 }
 
+
 .principal img {
     width: 1349px;
     height: 450px;
@@ -159,12 +160,18 @@ header{
     margin: 5% 0 5% 43%;
 
 }
+.fotoIndex img:hover{
+    height: 250px ;
+    width: 250px;
+}
 
-.fotoIndex{
+.fotoIndex img{
     background-size: cover; 
     display: block;
     width: 200px;
-    height: 200px;  
+    height: 200px; 
+    transition: height 3s, width 2s;
+
 }
 
 .estiloFooter{
