@@ -160,30 +160,12 @@ header{
 
 }
 
-.foto1{
-    background-size: cover;
-   width: 200px;
-   height: 200px;
-   display: block;
-}
-
-.foto2{
+.fotoIndex{
     background-size: cover; 
     display: block;
     width: 200px;
-    height: 200px;
-    
-    
-   
+    height: 200px;  
 }
-
-.foto3{
-    background-size: cover;
-    display: block;
-     width: 200px;
-     height: 200px;
-}
-
 
 .estiloFooter{
     background-color:rgb(181, 167, 224);
