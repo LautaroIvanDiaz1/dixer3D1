@@ -201,6 +201,25 @@ body {
 }
 
 
+@keyframes aparecer {
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 40%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.principal{
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
 
                     /*GRIDS*/
@@ -275,21 +294,6 @@ justify-content: center;/*mueve el contenido*/
 
 /*responsive*/
 
-@media screen and (max-width:768px) {
-
-.contenedor{
-    grid-template-columns: 0.2fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
-    grid-template-areas: 
-    "listaMenu confDixer confDixer"
-    "listaMenu nosotros nosotros"
-    "listaMenu texto texto"
-    "listaMenu foto ."
-    "footer footer footer "
-}
-}
-
-
 /*mobil*/
 
 @media (max-width:500px) {
@@ -306,7 +310,6 @@ justify-content: center;/*mueve el contenido*/
         ;
     }
 }
-
 
 
 .contenedorIndex{
@@ -383,4 +386,3 @@ justify-content: center;/*mueve el contenido*/
             ;
         }
     }
-
